@@ -25,8 +25,21 @@ def make_syntax_trees(sentences):
         i+=1
     return trees
 
-thug_trees = make_syntax_trees(thug_sentences)
-seuss_trees = make_syntax_trees(seuss_sentences)
+def make_token_list(sentences):
+    token_list = []
+    i = 0 #to count where the program is at
+    for sentence in sentences:
+        print(i)
+        words = tokenize.word_tokenize(sentence)
+        tagged_sentence = tag.pos_tag(words)
+        token_list.append(tagged_sentence)
+        i+=1
+    return token_list
 
-pickle.dump(thug_trees, open( 'trees/' + "thug_trees.pickle", "wb" ) )
-pickle.dump(seuss_trees, open('trees/' + "seuss_trees.pickle", "wb" ) )
+#thug_tokens = make_token_list(thug_sentences)
+#thug_trees = make_syntax_trees(thug_sentences)
+#seuss_trees = make_syntax_trees(seuss_sentences)
+
+#pickle.dump(thug_tokens, open('trees/' + "thug_tokens.pickle", "wb" ) )
+#pickle.dump(thug_trees, open( 'trees/' + "thug_trees.pickle", "wb" ) ) #close files?
+#pickle.dump(seuss_trees, open('trees/' + "seuss_trees.pickle", "wb" ) )

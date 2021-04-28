@@ -1,7 +1,14 @@
-client_id = "xS36HYOi_Qxg8q2xs6EJvAcx_YSytF6Q0Z3KMjHeJXto9-Pdv2kRR_SyMDu6aQQD"
+'''
+Caleb Eurich
+CSCI 3725
+M6
+4/27/2021
 
+This file scraped genius and writes lyrics from a specific artist to a text file. I aquired this code from 
+'How to Scrape Song Lyrics: A Gentle Tutorial' by Nick Pai on medium.com and used it to get my Young Thug lyrics into a text file. 
+'''
 
-GENIUS_API_TOKEN='PY_46woKAuOvz3unDbtrvJx6EkK_aLRooMULab5BZWK5ASicNPai0OxefMMZeoJD'
+GENIUS_API_TOKEN=''
 
 # Make HTTP requests
 import requests

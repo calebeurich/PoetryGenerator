@@ -1,3 +1,13 @@
+'''
+Caleb Eurich
+CSCI 3725
+M6
+4/27/2021
+
+This file is not used, as I was just messing around and attempting to use n grams initially.
+'''
+
+
 import nltk
 from nltk.util import ngrams
 import re
